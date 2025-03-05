@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #1c2681;
+  cursor: pointer;
+}

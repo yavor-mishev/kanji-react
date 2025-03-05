@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+.page-layout {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 1.5rem;
+  background-color: #f3f3f3;
+}
+
+.main-content {
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+
+  padding: 0rem 2rem;
+}
+
+.courses-main-content {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  padding-top: 1.5rem;
+  font-size: 2.25rem;
+  flex-grow: 1;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.courses-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navOptions {
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+}
+.navOpt {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #999999;
+  padding: 1rem;
+}
+
+.navOpt:hover {
+  border-bottom: 1px solid #212121;
+  color: #212121;
+}
+
+.displayStyle {
+  display: flex;
+  align-items: center;
+}
+
+.displayStyle button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 40px;
+  background-color: transparent;
+}
+.displayStyle button:hover {
+  cursor: pointer;
+  background-color: rgba(73, 69, 79, 0.1);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+  overflow: scroll;
+}
+
+/* aside content */
+.courses-aside-content {
+  flex-grow: 1;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  height: 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.actions input[type="text"] {
+  border: none;
+  border-radius: 1.75rem;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.notification-bell-btn {
+  height: 40px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.profile-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-btn:hover,
+.notification-bell-btn:hover {
+  cursor: pointer;
+  background-color: rgba(73, 69, 79, 0.1);
+}
